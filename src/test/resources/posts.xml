@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <tag id="1" name="tech" />
+    <tag id="2" name="lifestyle" />
+    <tag id="3" name="cooking" />
+
+    <post id="1" author="Craig Larman" title="iPhone 7 leaked" date="2016-05-10"/>
+    <post id="2" author="Stuart Halloway" title="10 things to buy before Christmas" date="2016-01-13"/>
+    <post id="3" author="Louis Fleenor" title="Top 5 phones of 2015" date="2015-03-10"/>
+    <post id="4" author="Billy Burrill" title="The perfect pizza" date="2016-05-15"/>
+    <post id="5" author="Deidra Mott" title="Is Google Glass dead?" date="2016-09-10"/>
+    <post id="6" author="Buffy Hellwig" title="Fried Chicken Grilled Cheese" date="2014-05-10"/>
+
+    <post_tags post_id="1" tag_id="1" />
+    <post_tags post_id="2" tag_id="1" />
+    <post_tags post_id="2" tag_id="2" />
+    <post_tags post_id="3" tag_id="1" />
+    <post_tags post_id="3" tag_id="2" />
+    <post_tags post_id="4" tag_id="3" />
+    <post_tags post_id="5" tag_id="1" />
+    <post_tags post_id="6" tag_id="3" />
+</dataset>
