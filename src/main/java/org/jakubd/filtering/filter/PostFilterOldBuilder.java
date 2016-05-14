@@ -6,7 +6,7 @@ import org.jakubd.filtering.domain.QPost;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
-public class PostFilterOldBuilder {
+public class PostFilterOldBuilder implements PostFilterBuilder {
 
     private final QPost POST = QPost.post;
 
