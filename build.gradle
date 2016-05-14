@@ -11,10 +11,13 @@ repositories {
     mavenCentral()
 }
 
+ext {
+    generatedSourcesDir = file("${buildDir}/generated/")
+}
+
 idea {
     module {
-        sourceDirs += file('generated/')
-        generatedSourceDirs += file('generated/')
+        sourceDirs += generatedSourcesDir
     }
 }
 
@@ -29,4 +32,11 @@ dependencies {
     testCompile group: 'org.springframework', name: 'spring-test', version: '4.2.6.RELEASE'
     testCompile group: 'org.dbunit', name: 'dbunit', version: '2.5.2'
     testCompile group: 'com.github.springtestdbunit', name: 'spring-test-dbunit', version: '1.3.0'
+}
+
+compileJava {
+    doFirst {
+        generatedSourcesDir.mkdirs()
+    }
+    options.compilerArgs += ['-s', generatedSourcesDir]
 }
